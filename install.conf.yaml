@@ -9,6 +9,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.gitconfig:
+    ~/.zshrc:
 
 - shell:
   # the following have to run after linking ~/.gitconfig
