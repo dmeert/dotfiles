@@ -8,6 +8,7 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.gitconfig:
 
 - shell:
   # the following have to run after linking ~/.gitconfig
