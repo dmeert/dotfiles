@@ -25,3 +25,4 @@
 
 - shell:
   - [git submodule update --init --recursive --remote --depth 1, Checking submodules]
+  - [nerd-fonts/install.sh --link --clean, Updating fonts]
