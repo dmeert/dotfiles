@@ -9,8 +9,13 @@
 - link:
     ~/.dotfiles: ''
     ~/.gitconfig:
+    ~/.zlogin:
+    ~/.zlogout:
+    ~/.zprezto:
+    ~/.zpreztorc:
+    ~/.zprofile:
+    ~/.zshenv:
     ~/.zshrc:
 
 - shell:
-  # the following have to run after linking ~/.gitconfig
   - [git submodule update --init --recursive --depth 1, Checking submodules]

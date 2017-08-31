@@ -6,3 +6,7 @@
 	path = powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
 	shallow = true
+[submodule "prezto"]
+	path = zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
+	shallow = true
