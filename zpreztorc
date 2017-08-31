@@ -76,6 +76,9 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 zstyle ':prezto:module:git:status:ignore' submodules 'dirty'
 
+# Git log oneline format
+zstyle ':prezto:module:git:log:oneline' format '%C(green)%h%C(reset) %s%C(red)%d%C(reset)'
+
 #
 # GNU Utility
 #
