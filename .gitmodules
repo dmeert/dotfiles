@@ -3,11 +3,6 @@
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 	shallow = true
-[submodule "powerlevel9k"]
-	path = powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
-	ignore = dirty
-	shallow = true
 [submodule "prezto"]
 	path = zprezto
 	url = git@github.com:Twanislas/prezto.git
