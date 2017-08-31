@@ -10,6 +10,6 @@
 	shallow = true
 [submodule "prezto"]
 	path = zprezto
-	url = https://github.com/Twanislas/prezto.git
+	url = git@github.com/Twanislas/prezto.git
 	ignore = dirty
 	shallow = true
