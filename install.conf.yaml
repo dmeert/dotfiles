@@ -18,4 +18,4 @@
     ~/.zshrc:
 
 - shell:
-  - [git submodule update --init --recursive --depth 1, Checking submodules]
+  - [git submodule update --init --recursive, Checking submodules]
