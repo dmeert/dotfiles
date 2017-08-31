@@ -1,3 +1,6 @@
+# iTerm2 shell integration
+test -e "${HOME}/.iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/.iterm2_shell_integration.zsh"
+
 # Powerlevel9k theme config
 POWERLEVEL9K_MODE='nerdfont-complete'
 

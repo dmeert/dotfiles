@@ -9,6 +9,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.gitconfig:
+    ~/.iterm2:
     ~/.zlogin:
     ~/.zlogout:
     ~/.zprezto:
