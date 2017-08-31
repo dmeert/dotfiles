@@ -6,5 +6,5 @@
 	url = git@github.com:Twanislas/prezto.git
 [submodule "nerd-fonts"]
 	path = nerd-fonts
-	url = https://github.com/ryanoasis/nerd-fonts.git
+	url = git@github.com:Twanislas/nerd-fonts.git
 	shallow = true
