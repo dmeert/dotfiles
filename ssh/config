@@ -1,5 +1,5 @@
 Host *.home
-  ProxyCommand ssh bastion.twan.ovh -W %h:%p
+  ProxyCommand ssh -F /dev/null bastion.twan.ovh -W %h:%p
   RemoteForward 52698 localhost:52698
 
 Host rx01.home
