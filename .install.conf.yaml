@@ -26,6 +26,7 @@
     ~/.zshrc:
 
 - shell:
+  - [git submodule update --init --recursive, Checking submodules]
   - [nerd-fonts/install.sh --link --clean --windows, Updating fonts]
   -
     command: for dotdir in `find ~ -name '.dotfiles.*'`; do $dotdir/.install -Q; done
