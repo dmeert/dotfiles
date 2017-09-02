@@ -17,6 +17,9 @@
     ~/.ssh/id_ecdsa.pub: ssh/id_ecdsa.pub
     ~/.ssh/id_ed25519.pub: ssh/id_ed25519.pub
     ~/.ssh/id_rsa.pub: ssh/id_rsa.pub
+    ~/.ssh/sk_mbp.pub: ssh/sk_mbp.pub
+    ~/.ssh/sk_wks.pub: ssh/sk_wks.pub
+    ~/.ssh/sk_backup.pub: ssh/sk_backup.pub
     ~/.zlogin:
     ~/.zlogout:
     ~/.zprezto:
