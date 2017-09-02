@@ -27,7 +27,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Checking submodules]
-  - [nerd-fonts/install.sh --link --clean --windows, Updating fonts]
+  - [nerd-fonts/install.sh --link --clean --windows --quiet, Updating fonts]
   -
     command: for dotdir in `find ~ -name '.dotfiles.*'`; do $dotdir/.install -Q; done
     stdout: true
