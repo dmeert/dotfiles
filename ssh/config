@@ -13,6 +13,7 @@ Host *.github.com github.com
   User git
   ForwardX11 no
   ForwardAgent no
+  PermitLocalCommand no
 
 Host *
   Protocol 2
