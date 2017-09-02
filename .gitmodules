@@ -3,7 +3,7 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "prezto"]
 	path = zprezto
-	url = git@github.com:Twanislas/prezto.git
+	url = https://github.com/sorin-ionescu/prezto.git
 [submodule "nerd-fonts"]
 	path = nerd-fonts
 	url = git@github.com:Twanislas/nerd-fonts.git
