@@ -12,6 +12,7 @@
     ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.iterm2:
+    ~/.shell:
     ~/.ssh/authorized_keys: ssh/authorized_keys
     ~/.ssh/config: ssh/config
     ~/.ssh/id_ecdsa.pub: ssh/id_ecdsa.pub
