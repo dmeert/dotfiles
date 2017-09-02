@@ -28,6 +28,6 @@
 - shell:
   - [nerd-fonts/install.sh --link --clean --windows, Updating fonts]
   -
-    command: for dotdir in `find ~ -name '.dotfiles.*'`; do $dotdir/.install; done
+    command: for dotdir in `find ~ -name '.dotfiles.*'`; do $dotdir/.install -Q; done
     stdout: true
     description: Checking for other dotfiles repo's
