@@ -1,5 +1,9 @@
 Host *.home
   ProxyCommand ssh -q -F /dev/null bastion.twan.ovh -W %h:%p
+  IdentityFile ~/.ssh/id_home
+
+Host bastion.twan.ovh
+  IdentityFile ~/.ssh/id_bastion
 
 Host rx01.home
   IdentityFile ~/.ssh/id_rsa
@@ -14,6 +18,7 @@ Host *.github.com github.com
   ForwardX11 no
   ForwardAgent no
   PermitLocalCommand no
+  IdentityFile ~/.ssh/id_github
 
 Host *
   Protocol 2
@@ -28,3 +33,4 @@ Host *
   IdentityFile ~/.ssh/sk_mbp.pub
   IdentityFile ~/.ssh/sk_wks.pub
   IdentityFile ~/.ssh/sk_backup.pub
+  IdentityFile ~/.ssh/id_default.pub
