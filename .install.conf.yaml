@@ -3,10 +3,12 @@
       create: true
       relink: true
       force: true
+    clean:
+      force: true
     shell:
       stderr: true
 
-- clean: ['~']
+- clean: ['~', '~/.ssh']
 
 - link:
     ~/.dotfiles: ''
