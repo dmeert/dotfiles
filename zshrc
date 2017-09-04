@@ -14,3 +14,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs)
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+# Source additionnal shell configs
+for config (~/.shell/*.sh) source $config
