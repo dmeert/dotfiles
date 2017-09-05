@@ -29,7 +29,7 @@ Host *
   CheckHostIP yes
   VerifyHostKeyDNS yes
   PermitLocalCommand yes
-  LocalCommand ssh -o PermitLocalCommand=no %n "[[ -d ~/.dotfiles ]] && (which git >/dev/null && echo -e 'Updating dotfiles on %h ...' && git -C ~/.dotfiles pull && ~/.dotfiles/.install -Q) || (echo -e '\033[0;31mDotfiles are not installed for %r@%h !\033[0m')"
+  LocalCommand ssh -o PermitLocalCommand=no %n "[[ -d ~/.dotfiles ]] && (which git >/dev/null && echo -e 'Updating dotfiles on %h ...' && git -C ~/.dotfiles pull -q && ~/.dotfiles/.install -Q) || (echo -e '\033[0;31mDotfiles are not installed for %r@%h !\033[0m')"
   IdentityFile ~/.ssh/sk_mbp.pub
   IdentityFile ~/.ssh/sk_wks.pub
   IdentityFile ~/.ssh/sk_backup.pub
