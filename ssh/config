@@ -7,7 +7,7 @@ Host bastion.twan.ovh
   Port 2200
 
 Host rx01.mgmt rx01.lan
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_rx01
 
 Host pve01.mgmt pvr.lan
   User root
