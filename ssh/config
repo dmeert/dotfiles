@@ -12,6 +12,11 @@ Host rx01.home
 Host pve01.home pvr.home
   User root
 
+Host admin.mgmt
+  IdentityFile ~/.ssh/id_home
+  PermitLocalCommand yes
+  LocalCommand ssh -o PermitLocalCommand=no %n "[[ -d ~/.dotfiles ]] && (which git >/dev/null && echo -e 'Updating dotfiles on %h ...' && git -C ~/.dotfiles pull -q && ~/.dotfiles/.install -Q) || (echo -e '\033[0;31mDotfiles are not installed for %r@%h !\033[0m')"
+
 Host *.github.com github.com
   Hostname ssh.github.com
   Port 443
@@ -29,8 +34,6 @@ Host *
   ForwardX11 yes
   CheckHostIP yes
   VerifyHostKeyDNS yes
-  PermitLocalCommand yes
-  LocalCommand ssh -o PermitLocalCommand=no %n "[[ -d ~/.dotfiles ]] && (which git >/dev/null && echo -e 'Updating dotfiles on %h ...' && git -C ~/.dotfiles pull -q && ~/.dotfiles/.install -Q) || (echo -e '\033[0;31mDotfiles are not installed for %r@%h !\033[0m')"
   IdentityFile ~/.ssh/sk_mbp.pub
   IdentityFile ~/.ssh/sk_wks.pub
   IdentityFile ~/.ssh/sk_backup.pub
