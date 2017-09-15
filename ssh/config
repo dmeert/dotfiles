@@ -1,9 +1,10 @@
-Host *.home
-  ProxyCommand ssh -q -F /dev/null bastion.twan.ovh -W %h:%p
+Host *.mgmt *.lan
+  ProxyCommand ssh -q -F /dev/null -p 2200 bastion.twan.ovh -W %h:%p
   IdentityFile ~/.ssh/id_home
 
 Host bastion.twan.ovh
   IdentityFile ~/.ssh/id_bastion
+  Port 2200
 
 Host rx01.home
   IdentityFile ~/.ssh/id_rsa
