@@ -6,10 +6,10 @@ Host bastion.twan.ovh
   IdentityFile ~/.ssh/id_bastion
   Port 2200
 
-Host rx01.home
+Host rx01.mgmt rx01.lan
   IdentityFile ~/.ssh/id_rsa
 
-Host pve01.home pvr.home
+Host pve01.mgmt pvr.lan
   User root
 
 Host admin.mgmt
