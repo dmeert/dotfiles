@@ -9,7 +9,7 @@ Host bastion.twan.ovh
 Host rx01.mgmt rx01.lan
   IdentityFile ~/.ssh/id_rx01
 
-Host pve01.mgmt pvr.lan
+Host pve*.mgmt pvr.lan
   User root
 
 Host admin.mgmt
