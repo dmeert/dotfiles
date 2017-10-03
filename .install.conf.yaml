@@ -36,7 +36,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Checking submodules]
-  - [nerd-fonts/install.sh --link --clean --quiet, Updating fonts]
+  - [./fontinstall.sh, Updating fonts]
   -
     command: for dotdir in `find ~ -name '.dotfiles.*'`; do git -C $dotdir pull -q && $dotdir/.install -Q; done
     stdout: true

@@ -4,7 +4,3 @@
 [submodule "prezto"]
 	path = zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
-[submodule "nerd-fonts"]
-	path = nerd-fonts
-	url = git@github.com:Twanislas/nerd-fonts.git
-	shallow = true
