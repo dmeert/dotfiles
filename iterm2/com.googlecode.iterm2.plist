@@ -66,11 +66,15 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 890 620 392 0 0 2560 1578 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1258 723 796 473 0 0 2560 1578 </string>
+	<string>1258 737 796 473 0 0 2560 1578 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 994 592 584 0 0 2560 1578 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>419 212 1658 1148 0 0 2560 1578 </string>
+	<string>1280 4 1274 1574 0 0 2560 1578 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>1758 1078 650 500 0 0 2560 1578 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>364 191 650 500 0 0 2560 1578 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1383,6 +1387,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>1</integer>
+	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>528731852.63082701</real>
 	<key>PointerActions</key>
@@ -1438,6 +1444,8 @@
 	<integer>0</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1507039104</real>
+	<key>WindowNumber</key>
+	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
