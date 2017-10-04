@@ -137,3 +137,8 @@ if [[ -o interactive ]]; then
   fi
 fi
 alias imgcat=~/.iterm2/imgcat; alias it2dl=~/.iterm2/it2dl
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm2"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
