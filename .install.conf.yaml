@@ -13,6 +13,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.gitconfig:
+    ~/.gitignore:
     ~/.iterm2:
     ~/.shell/aliases.sh: shell/aliases.sh
     ~/.shell/wsl.sh: shell/wsl.sh

@@ -4,3 +4,5 @@
 
 [github]
 	user = Twanislas
+[core]
+	excludesfile = ~/.gitignore
