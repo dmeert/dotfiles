@@ -27,6 +27,7 @@
     ~/.ssh/sk_mbp.pub: ssh/sk_mbp.pub
     ~/.ssh/sk_wks.pub: ssh/sk_wks.pub
     ~/.ssh/sk_backup.pub: ssh/sk_backup.pub
+    ~/.tmux.conf:
     ~/.zlogin:
     ~/.zlogout:
     ~/.zprezto:
