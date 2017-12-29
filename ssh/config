@@ -34,7 +34,7 @@ Host *
   ForwardX11 yes
   CheckHostIP yes
   VerifyHostKeyDNS yes
-  IdentityFile ~/.ssh/sk_mbp.pub
-  IdentityFile ~/.ssh/sk_wks.pub
-  IdentityFile ~/.ssh/sk_backup.pub
-  IdentityFile ~/.ssh/id_default.pub
+#  IdentityFile ~/.ssh/sk_mbp.pub
+#  IdentityFile ~/.ssh/sk_wks.pub
+#  IdentityFile ~/.ssh/sk_backup.pub
+  IdentityFile ~/.ssh/id_default
