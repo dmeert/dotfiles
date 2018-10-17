@@ -4,4 +4,4 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMt0NCL4
 
 % git remote -v
 
-%git remote set-url origin git@github.com:dmeert/dotfiles.git
+% git remote set-url origin git@github.com:dmeert/dotfiles.git
