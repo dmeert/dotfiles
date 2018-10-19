@@ -33,7 +33,7 @@ fi
 # Paths
 #
 
-PATH=~/.dotfiles/bin:${PATH}
+PATH=~/.bin:${PATH}
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
@@ -45,7 +45,6 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  ~/.dotfiles/bin
   /usr/local/{bin,sbin}
   $path
 )
