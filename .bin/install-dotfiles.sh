@@ -8,13 +8,9 @@ if [ -e ${HOME}/${DOTFILES} ]; then
 fi
 
 # Clone repo and set it up
-git clone \
-	--no-checkout \
-	--shallow-submodules \
-	--config core.worktree=${HOME} \
-	--config status.showUntrackedFiles=no \
-  git@github.com:Twanislas/dotfiles.git \
-  ${HOME}/${DOTFILES}
+git clone --bare git@github.com:Twanislas/dotfiles.git ${HOME}/${DOTFILES}
+git -C ${HOME}/${DOTFILES} config --local core.worktree ${HOME}
+git -C ${HOME}/${DOTFILES} config --local status.showUntrackedFiles no
 echo '*' >> ${HOME}/${DOTFILES}/info/exclude
 echo '.*' >> ${HOME}/${DOTFILES}/info/exclude
 
