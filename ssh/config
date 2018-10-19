@@ -5,7 +5,6 @@ Host *.github.com github.com
   ForwardX11 no
   ForwardAgent no
   PermitLocalCommand no
-  IdentityFile ~/.ssh/id_github
 
 Host *
   Protocol 2
