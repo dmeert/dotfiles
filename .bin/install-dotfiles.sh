@@ -12,8 +12,12 @@ git clone --bare git@github.com:Twanislas/dotfiles.git ${HOME}/${DOTFILES}
 git --git-dir=$HOME/$DOTFILES --work-tree=$HOME config --local core.bare no
 git --git-dir=$HOME/$DOTFILES --work-tree=$HOME config --local core.worktree ${HOME}
 git --git-dir=$HOME/$DOTFILES --work-tree=$HOME config --local status.showUntrackedFiles no
+git --git-dir=$HOME/$DOTFILES --work-tree=$HOME config --local core.sparsecheckout true
 echo '*' >> ${HOME}/${DOTFILES}/info/exclude
 echo '.*' >> ${HOME}/${DOTFILES}/info/exclude
+echo '/*' >> ${HOME}/${DOTFILES}/info/sparse-checkout
+echo '!README.md' >> ${HOME}/${DOTFILES}/info/sparse-checkout
+echo '!LICENCE' >> ${HOME}/${DOTFILES}/info/sparse-checkout
 
 # Pull files
 git --git-dir=$HOME/$DOTFILES --work-tree=$HOME checkout -f
