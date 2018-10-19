@@ -9,7 +9,7 @@ fi
 
 # Clone repo and set it up
 git clone \
-	--bare \
+	--no-checkout \
 	--shallow-submodules \
 	--config core.worktree=${HOME} \
 	--config status.showUntrackedFiles=no \
