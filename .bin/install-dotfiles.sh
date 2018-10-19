@@ -9,6 +9,7 @@ fi
 
 # Clone repo and set it up
 git clone --bare git@github.com:Twanislas/dotfiles.git ${HOME}/${DOTFILES}
+git -C ${HOME}/${DOTFILES} config --local core.bare no
 git -C ${HOME}/${DOTFILES} config --local core.worktree ${HOME}
 git -C ${HOME}/${DOTFILES} config --local status.showUntrackedFiles no
 echo '*' >> ${HOME}/${DOTFILES}/info/exclude
