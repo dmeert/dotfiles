@@ -24,4 +24,4 @@ git --git-dir=${HOME}/${DOTFILES} --work-tree=${HOME} checkout -f
 git --git-dir=${HOME}/${DOTFILES} --work-tree=${HOME} submodule update --recursive --init
 
 # Spawn a new shell
-exec ${SHELL}
+exec $(which zsh)
