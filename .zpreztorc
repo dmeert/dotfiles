@@ -35,14 +35,21 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'fasd' \
   'prompt' \
   'autosuggestions' \
+  'command-not-found' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'archive' \
+  'rsync' \
+  'docker' \
   'git' \
   'osx' \
   'ssh' \
-  'tmux'
+  'gpg' \
+  'tmux' \
+  'screen'
 
 #
 # Autosuggestions
