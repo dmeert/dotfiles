@@ -1,6 +1,6 @@
 # iTerm2 shell integration
 if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
-	test -e "${HOME}/.iterm2/iterm2_shell_integration.zsh" && source "${HOME}/.iterm2/iterm2_shell_integration.zsh"
+	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
 
 # Powerlevel9k theme config
