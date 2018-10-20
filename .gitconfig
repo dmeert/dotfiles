@@ -6,6 +6,8 @@
 [github]
 	user = Twanislas
 [alias]
-	log = log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"
-	status = status --ignore-submodules=${_git_status_ignore_submodules} --short
-	diff = diff --no-ext-diff
+	lg = log --topo-order --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	st = status --ignore-submodules=dirty --short
+	df = diff --no-ext-diff
+	cm = commit -m
+	cam = commit -a -m
