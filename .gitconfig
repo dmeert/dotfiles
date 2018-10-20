@@ -11,3 +11,5 @@
 	df = diff --no-ext-diff
 	cm = commit -m
 	cam = commit -a -m
+[push]
+	default = current
