@@ -1,8 +1,11 @@
+[core]
+	excludesfile = ~/.gitignore_global
 [user]
 	name = Antoine Rahier
 	email = antoine.rahier@gmail.com
-
 [github]
 	user = Twanislas
-[core]
-	excludesfile = ~/.gitignore_global
+[alias]
+	log = log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"
+	status = status --ignore-submodules=${_git_status_ignore_submodules} --short
+	diff = diff --no-ext-diff
