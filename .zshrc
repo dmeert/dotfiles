@@ -1,3 +1,6 @@
+# Dotfiles
+export DOTFILES=${DOTFILES:-".dotfiles"}
+
 # iTerm2 shell integration
 if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
 	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
