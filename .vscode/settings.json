@@ -1,0 +1,7 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.tabSize": 2,
+    "editor.acceptSuggestionOnEnter": "off",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
+}
