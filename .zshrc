@@ -10,14 +10,12 @@ if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
 	defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 fi
 
-# Powerlevel9k theme config
-POWERLEVEL9K_MODE='nerdfont-complete'
+# Default user
 DEFAULT_USER=arahier
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh root_indicator context dir vcs newline)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs)
+
+# Powerlevel10k theme config
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -26,3 +24,5 @@ fi
 
 # Source additionnal shell configs
 for config (~/.shell/*.sh) source $config
+
+
