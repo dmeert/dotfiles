@@ -13,3 +13,7 @@
 	cam = commit -a -m
 [push]
 	default = current
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code -nw -d $LOCAL $REMOTE
