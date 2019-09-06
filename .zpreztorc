@@ -45,9 +45,10 @@ zstyle ':prezto:load' pmodule \
   'rsync' \
   'docker' \
   'git' \
+  'node' \
   'osx' \
+  'dpkg' \
   'ssh' \
-  'gpg' \
   'tmux' \
   'screen'
 
