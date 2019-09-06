@@ -2,6 +2,9 @@
 alias dotfiles='git --git-dir=$HOME/$DOTFILES --work-tree=$HOME'
 alias dfu='dotfiles pull -q && dotfiles submodule update -q --init --recursive && exec $(which zsh)'
 alias dfsubup='dotfiles submodule update --init --remote && dotfiles submodule foreach --recursive git submodule update --init'
+alias cf='dotfiles'
+alias cfu='dfu'
+alias cfsubup='dfsubup'
 
 # Docker
 alias dc='docker-compose'
