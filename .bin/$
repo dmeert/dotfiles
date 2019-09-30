@@ -1,0 +1,4 @@
+# Ever pasted "$ somecommand" into the terminal and gotten "$: command not found"
+# There ya go :
+
+"$@"
