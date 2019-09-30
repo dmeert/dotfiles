@@ -4,6 +4,9 @@
 
 if [[ -f /proc/version ]] && grep --quiet Microsoft /proc/version; then
 
+	# Link VSCode config
+	#FIXME ln -sf "$HOME/.vscode/settings.json" "%APPDATA%\Code\User\settings.json"
+
 	# Set correct umask
 	# Microsoft/BashOnWindows#352
 	[[ "$(umask)" == '000' ]] && umask 022
