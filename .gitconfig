@@ -2,7 +2,7 @@
 	excludesfile = ~/.gitignore_global
 [user]
 	name = Antoine Rahier
-	email = antoine.rahier@gmail.com
+	email = 524706+Twanislas@users.noreply.github.com
 	signingkey = 632BE09CDD6A34AB4711F1A5537B7FD843BC1E54
 [commit]
 	gpgsign = true
