@@ -3,6 +3,9 @@
 [user]
 	name = Antoine Rahier
 	email = antoine.rahier@gmail.com
+	signingkey = 632BE09CDD6A34AB4711F1A5537B7FD843BC1E54
+[commit]
+	gpgsign = true
 [github]
 	user = Twanislas
 [alias]
