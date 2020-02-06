@@ -25,4 +25,5 @@ fi
 # Source additionnal shell configs
 for config (~/.shell/*.sh) source $config
 
-
+# OpenPGP
+export GPG_TTY=$(tty)
