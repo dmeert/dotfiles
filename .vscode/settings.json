@@ -1,7 +1,16 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.autoIndent": "full",
+  "editor.insertSpaces": true,
   "editor.tabSize": 2,
+  "files.eol": "\n",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.renderWhitespace": "boundary",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "explorer.confirmDelete": false,
@@ -15,4 +24,38 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontFamily": "'Hack NF', 'Hack Nerd Font', Menlo, Monaco, Consolas, 'Courier New', monospace",
   "git.enableCommitSigning": true,
+  "git.enableSmartCommit": true,
+  "vsicons.projectDetection.disableDetect": true,
+  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.highlights.enabled": true,
+  "files.watcherExclude": {
+    "**/.DS_Store": true,
+    "**/__pycache__/**": true,
+    "**/._*": true,
+    "**/.git/**": true,
+    "**/.git": true
+  },
+  "search.exclude": {
+    "**/.DS_Store": true,
+    "**/__pycache__/**": true,
+    "**/._*": true,
+    "**/.git/**": true,
+    "**/.git": true,
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/__pycache__/**": true,
+    "**/._*": true,
+    "**/.git/**": true,
+    "**/.git": true
+  },
+  "todo-tree.filtering.excludeGlobs": [
+    "**/.DS_Store",
+    "**/__pycache__/**",
+    "**/._*",
+    "**/.git/**",
+    "**/.git"
+  ],
+  "cloudcode.autoDependencies": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
