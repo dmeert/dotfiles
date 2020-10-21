@@ -18,6 +18,7 @@ echo '.*' >> ${HOME}/${DOTFILES}/info/exclude
 echo '/*' >> ${HOME}/${DOTFILES}/info/sparse-checkout
 echo '!README.md' >> ${HOME}/${DOTFILES}/info/sparse-checkout
 echo '!LICENCE' >> ${HOME}/${DOTFILES}/info/sparse-checkout
+echo '!.github' >> ${HOME}/${DOTFILES}/info/sparse-checkout
 
 # Pull files
 git --git-dir=${HOME}/${DOTFILES} --work-tree=${HOME} checkout -f
