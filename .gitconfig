@@ -8,14 +8,10 @@
 	gpgsign = true
 [github]
 	user = Twanislas
-[alias]
-	lg = log --topo-order --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	st = status --ignore-submodules=dirty --short
-	df = diff --no-ext-diff
-	cm = commit -m
-	cam = commit -a -m
 [push]
 	default = current
+[pull]
+  rebase = false
 [diff]
     tool = vscode
 [difftool "vscode"]
