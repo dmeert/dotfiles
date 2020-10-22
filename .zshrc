@@ -23,7 +23,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Source additionnal shell configs
-for config (~/.shell/*.sh) source $config
+for config (~/.shell/*.zsh) source $config
 
 # OpenPGP
 export GPG_TTY=$(tty)
