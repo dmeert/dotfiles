@@ -31,7 +31,7 @@ git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" checkout -f
 git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" submodule update --recursive --init
 
 # Change default shell to Zsh
-chsh -s "$(which zsh)"
+sudo chsh -s "$(which zsh)" "$USER"
 
 # Spawn a new shell
 exec "$(which zsh)"
