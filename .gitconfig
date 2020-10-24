@@ -1,15 +1,15 @@
 [core]
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [user]
-	name = Antoine Rahier
-	email = 524706+Twanislas@users.noreply.github.com
-	signingkey = 83C781CF847334B90AC2A1A83AEEDED72E8F122B
+  name = Antoine Rahier
+  email = 524706+Twanislas@users.noreply.github.com
+  signingkey = 83C781CF847334B90AC2A1A83AEEDED72E8F122B
 [commit]
 #	gpgsign = true
 [github]
-	user = Twanislas
+  user = Twanislas
 [push]
-	default = current
+  default = current
 [pull]
   rebase = false
 [diff]
