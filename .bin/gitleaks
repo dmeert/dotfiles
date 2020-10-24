@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+#
+# GitLeaks support
+# See https://github.com/zricethezav/gitleaks
+#
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  gitleaks-darwin-amd64 "$@"
+elif [[ "$OSTYPE" =~ ^linux ]]; then
+  if [[ "$(uname -m)" =~ ^arm ]]; then
+    gitleaks-linux-arm "$@"
+  else
+    gitleaks-linux-amd64 "$@"
+  fi
+fi

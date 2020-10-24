@@ -24,7 +24,9 @@ git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" config --local core.sp
     echo '!README.md'
     echo '!LICENCE'
     echo '!.github'
+    echo '!.gitleaks.toml'
 } >> "${HOME}/${DOTFILES}"/info/sparse-checkout
+ln -sf "${HOME}/.bin/gitleaks-pre-commit-hook" "${HOME}/${DOTFILES}"/hooks/pre-commit
 
 # Pull files
 git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" checkout -f

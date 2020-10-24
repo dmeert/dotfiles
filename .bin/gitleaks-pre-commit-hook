@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#
+# GitLeaks pre-commit hook
+#
+
+exec gitleaks --verbose --redact --pretty --repo-config
