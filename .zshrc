@@ -1,5 +1,6 @@
-# Dotfiles
-export DOTFILES=${DOTFILES:-".dotfiles"}
+#
+# Executes commands at the start of an interactive session.
+#
 
 # iTerm2 shell integration
 if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
@@ -10,20 +11,12 @@ if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
 	defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 fi
 
-# Default user
-DEFAULT_USER=arahier
-
 # Powerlevel10k theme config
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# Source Prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Source Prezto provided runcom
+[[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc"
 
 # Source additionnal shell configs
 for config (~/.shell/*.zsh) source $config
-
-# OpenPGP
-export GPG_TTY=$(tty)
