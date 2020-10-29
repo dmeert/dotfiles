@@ -20,3 +20,6 @@ fi
 
 # Source additionnal shell configs
 for config (~/.shell/*.zsh) source $config
+
+# kubectl completion
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)

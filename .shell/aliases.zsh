@@ -10,6 +10,9 @@ alias cfsubup='dfsubup'
 alias dc='docker-compose'
 alias dk='docker'
 
+# Kubernetes
+alias k='kubectl'
+
 # Misc
 alias fu='sudo $(fc -ln -1)'
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
