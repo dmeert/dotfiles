@@ -14,5 +14,8 @@ DEFAULT_USER=arahier
 # OpenPGP
 export GPG_TTY=$(tty)
 
+# Default Kubectl config location
+export KUBECONFIG=${HOME}/.kube/config
+
 # Source Prezto provided runcom
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv"
