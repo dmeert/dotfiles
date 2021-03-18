@@ -7,4 +7,12 @@ updates:
   assignees:
   - Twanislas
   labels:
-    - "dependencies"
+    - dependencies
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+  assignees:
+  - Twanislas
+  labels:
+    - dependencies
