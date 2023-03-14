@@ -23,3 +23,6 @@ for config (~/.shell/*.zsh) source $config
 
 # kubectl completion
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+# talosctl completion
+[[ $commands[talosctl] ]] && source <(talosctl completion zsh)
