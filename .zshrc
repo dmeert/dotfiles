@@ -26,3 +26,6 @@ for config (~/.shell/*.zsh) source $config
 
 # talosctl completion
 [[ $commands[talosctl] ]] && source <(talosctl completion zsh)
+
+# helm completion
+[[ $commands[helm] ]] && source <(helm completion zsh)
