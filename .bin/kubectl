@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  kubectl-darwin-amd64 "$@"
+elif [[ "$OSTYPE" =~ ^linux ]]; then
+  if [[ "$(uname -m)" =~ ^arm ]]; then
+    kubectl-linux-arm "$@"
+  else
+    kubectl-linux-amd64 "$@"
+  fi
+fi
