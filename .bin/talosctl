@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  talosctl-darwin-amd64 "$@"
+elif [[ "$OSTYPE" =~ ^linux ]]; then
+  if [[ "$(uname -m)" =~ ^arm ]]; then
+    talosctl-linux-arm "$@"
+  else
+    talosctl-linux-amd64 "$@"
+  fi
+fi
