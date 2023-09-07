@@ -1,9 +1,8 @@
 [core]
   excludesfile = ~/.gitignore_global
 [user]
-  name = Antoine Rahier
+  name = Twanislas
   email = 524706+Twanislas@users.noreply.github.com
-  signingkey = 83C781CF847334B90AC2A1A83AEEDED72E8F122B
 [github]
   user = Twanislas
 [push]
@@ -14,3 +13,11 @@
     tool = vscode
 [difftool "vscode"]
     cmd = code -nw -d $LOCAL $REMOTE
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	defaultKeyCommand = ssh-add -L
