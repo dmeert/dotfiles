@@ -13,13 +13,10 @@ PATH=~/.gem/ruby/2.6.0/bin:${PATH}
 GEM_HOME=~/.gem
 
 # Default user
-DEFAULT_USER=arahier
+DEFAULT_USER=didierm
 
 # OpenPGP
 export GPG_TTY=$(tty)
-
-# Default Kubectl config location
-[[ -s "${HOME}/.kube/config" ]] && export KUBECONFIG=${HOME}/.kube/config
 
 # Source Prezto provided runcom
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv"

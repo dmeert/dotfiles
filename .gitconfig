@@ -1,10 +1,10 @@
 [core]
   excludesfile = ~/.gitignore_global
 [user]
-  name = Twanislas
-  email = 524706+Twanislas@users.noreply.github.com
+  name = dmeert
+  email = 13778846+dmeert@users.noreply.github.com
 [github]
-  user = Twanislas
+  user = dmeert
 [push]
   default = current
 [pull]
@@ -13,11 +13,11 @@
     tool = vscode
 [difftool "vscode"]
     cmd = code -nw -d $LOCAL $REMOTE
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = true
-[tag]
-	gpgsign = true
-[gpg "ssh"]
-	defaultKeyCommand = ssh-add -L
+# [gpg]
+# 	format = ssh
+# [commit]
+# 	gpgsign = true
+# [tag]
+# 	gpgsign = true
+# [gpg "ssh"]
+# 	defaultKeyCommand = ssh-add -L

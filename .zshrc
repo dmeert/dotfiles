@@ -13,19 +13,10 @@ fi
 
 # Powerlevel10k theme config
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # Source Prezto provided runcom
 [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" ]] && source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc"
 
 # Source additionnal shell configs
 for config (~/.shell/*.zsh) source $config
-
-# kubectl completion
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-
-# talosctl completion
-[[ $commands[talosctl] ]] && source <(talosctl completion zsh)
-
-# helm completion
-[[ $commands[helm] ]] && source <(helm completion zsh)
