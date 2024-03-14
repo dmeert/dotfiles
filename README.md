@@ -15,14 +15,14 @@ Inspired from :
 
 ## Installing
 
-I would strongly advise not to clone my dotfiles, instead, [fork](https://github.com/Twanislas/dotfiles/fork) this repo and update the [install script](.bin/install-dotfiles.sh#L11) so it will point to your forked repo. You can then go ahead and change my settings to your liking.
+I would strongly advise not to clone my dotfiles, instead, [fork](https://github.com/dmeert/dotfiles/fork) this repo and update the [install script](.bin/install-dotfiles.sh#L11) so it will point to your forked repo. You can then go ahead and change my settings to your liking.
 
 You can change the path where you store the bare repo by setting the `DOTFILES` environment variable before launching the install script. The default is `.dotfiles` and it's always relative to `$HOME`. So if you `export DOTFILES=.my-awesome-repo`, the bare repository will end up in something like `/home/<username>/.my-awesome-repo`.
 
 Then launch the install script :
 
 ```sh
-curl -sfL https://raw.githubusercontent.com/Twanislas/dotfiles/master/.bin/install-dotfiles.sh | bash
+curl -sfL https://raw.githubusercontent.com/dmeert/dotfiles/master/.bin/install-dotfiles.sh | bash
 ```
 
 ## Usage
