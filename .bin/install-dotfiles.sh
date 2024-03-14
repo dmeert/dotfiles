@@ -9,7 +9,7 @@ if [ -e "${HOME}/${DOTFILES}" ]; then
 fi
 
 # Clone repo and set it up
-git clone --bare git@github.com:Twanislas/dotfiles.git "${HOME}/${DOTFILES}"
+git clone --bare git@github.com:dmeert/dotfiles.git "${HOME}/${DOTFILES}"
 git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" config --local core.bare no
 git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" config --local core.worktree "${HOME}"
 git --git-dir="${HOME}/${DOTFILES}" --work-tree="${HOME}" config --local status.showUntrackedFiles no
