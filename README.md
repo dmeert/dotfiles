@@ -1,4 +1,4 @@
-# Twan's dotfiles
+# DMT's dotfiles
 
 I manage my dotfiles leveraging Git's "worktree" feature. This way I can have the Git repo metadata stored wherever I want and the actual files stored directly in my `$HOME`.
 
